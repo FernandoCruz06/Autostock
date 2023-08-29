@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_profile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- ImageView circular en la parte superior centrada -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewImg"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="360dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circular_background" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Botón para cambiar la foto en la esquina inferior derecha -->
+    <ImageButton
+        android:id="@+id/change_photo_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@id/cardViewImg"
+        android:layout_alignBottom="@id/cardViewImg"
+        android:src="@drawable/baseline_photo_camera_24"
+        android:background="@drawable/circular_background"/>
+
+    <!-- TextViews en el centro con iconos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewImg"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <!-- Primer TextView -->
+        <LinearLayout
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp">
+
+            <!-- Icono al inicio -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/profile" />
+
+            <!-- Texto en el centro -->
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Texto 1"
+                android:layout_marginStart="15dp"
+                android:textSize="23dp" />
+
+            <!-- Icono al final -->
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/edit_icon"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <!-- Segundo TextView -->
+        <LinearLayout
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp">
+
+            <!-- Icono al inicio -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/email" />
+
+            <!-- Texto en el centro -->
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Texto 2"
+                android:layout_marginStart="15dp"
+                android:textSize="23dp"/>
+
+            <!-- Icono al final -->
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/edit_icon"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- tercer TextView -->
+        <LinearLayout
+            android:id="@+id/editContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp">
+
+            <!-- Icono al inicio -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/password" />
+
+            <!-- Texto en el centro -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambiar contraseña"
+                android:layout_marginStart="15dp"
+                android:textSize="23dp"/>
+
+            <!-- Icono al final -->
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/edit_icon"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

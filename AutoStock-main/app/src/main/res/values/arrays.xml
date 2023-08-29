@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categorias_array">
+        <item>Categoría</item>
+        <item>Aceites</item>
+        <item>Filtros</item>
+        <item>Baterías</item>
+        <item>Neumáticos</item>
+        <item>Suspensión</item>
+        <item>Limpieza</item>
+        <item>Accesorios</item>
+        <item>Seguridad</item>
+        <item>Electrónicos</item>
+    </string-array>
+
+    <string-array name="marcas_array">
+        <item>Marca</item>
+        <item>Castrol</item>
+        <item>Valvoline</item>
+        <item>Mobil 1</item>
+        <item>Bosch</item>
+        <item>Fram</item>
+        <item>Michelin</item>
+        <item>Goodyear</item>
+        <item>Monroe</item>
+        <item>KYB</item>
+    </string-array>
+
+    <string-array name="proveedores_array">
+        <item>Proveedor</item>
+        <item>Castrol S.A.</item>
+        <item>Auto Parts</item>
+        <item>Global Tires</item>
+        <item>AutoMasters</item>
+        <item>Quality Auto</item>
+        <item>Motor Parts</item>
+        <item>Advanced Car</item>
+        <item>GreenLine</item>
+        <item>AutoTech</item>
+    </string-array>
+
+</resources>

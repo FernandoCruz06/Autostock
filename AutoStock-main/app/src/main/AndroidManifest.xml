@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AutoStock"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Proveedores"
+            android:exported="false" />
+        <activity
+            android:name=".Categoria"
+            android:exported="false" />
+        <activity
+            android:name=".Marca"
+            android:exported="false" />
+        <activity
+            android:name=".readProducts"
+            android:exported="false" />
+        <activity
+            android:name=".LoginHuella"
+            android:exported="false" />
+        <activity
+            android:name=".fingerprint"
+            android:exported="false" />
+        <activity
+            android:name=".Delete_Product"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Edit_Product"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_editPassword"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_editEmail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_editName"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity_edit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".container_profile"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".containerTools"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_nav_header"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".container"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detalles"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".editar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".agregar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment_inventory"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

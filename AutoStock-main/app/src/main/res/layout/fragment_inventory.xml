@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_inventory">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/myListView"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_launch"
+            android:layout_gravity="center_horizontal"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/fabRead"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="@color/color_launch"
+
+        android:drawableLeft="@drawable/baseline_format_list_bulleted_24"
+        android:drawableRight="@drawable/ic_next"
+        android:drawablePadding="8dp"
+        android:text="Inventario"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/fabDelete"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="36dp"
+
+        android:backgroundTint="@color/color_launch"
+        android:drawableLeft="@drawable/baseline_delete_24"
+        android:drawableRight="@drawable/ic_next"
+        android:drawablePadding="8dp"
+        android:text="Eliminar Producto"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fabRead"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/fabEdit"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="36dp"
+
+        android:backgroundTint="@color/color_launch"
+        android:drawableLeft="@drawable/baseline_edit_25"
+        android:drawableRight="@drawable/ic_next"
+        android:drawablePadding="8dp"
+        android:text="Editar productos"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fabDelete"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="36dp"
+
+        android:backgroundTint="@color/color_launch"
+        android:drawableLeft="@drawable/baseline_add_24"
+        android:drawableRight="@drawable/ic_next"
+        android:drawablePadding="8dp"
+        android:text="Añadir Producto"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fabEdit"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

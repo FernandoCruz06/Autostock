@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_Calculadora"
+        android:title="Calculadora">
+    </item>
+
+    <item
+        android:id="@+id/menu_Conversor"
+        android:title="Conversor"
+        android:textColor="@color/white">>
+
+    </item>
+
+    <item
+        android:id="@+id/menu_lista"
+        android:title="lista de tareas"
+        android:textColor="@color/white">>
+    </item>
+
+</menu>

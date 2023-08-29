@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_homeD"
+            android:icon="@drawable/home"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/menu_perfilD"
+            android:icon="@drawable/profile"
+            android:title="Perfil" />
+
+
+        <item
+            android:id="@+id/menu_herramientasD"
+            android:icon="@drawable/conf2"
+            android:title="Herramientas" />
+
+        <item
+            android:title=" "/>
+        <item
+            android:id="@+id/menu_signout"
+            android:icon="@drawable/signout"
+            android:title="Cerrar sesión" />
+
+    </group>
+</menu>
